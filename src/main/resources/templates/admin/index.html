@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/">
+</head>
+<body>
+    <div data-th-replace="~{admin/fragments/header}"> </div>
+    <main
+            data-th-if="${content}"
+            data-th-insert="~{|admin/${content}|}"
+    >
+
+    </main>
+</body>
+</html>
